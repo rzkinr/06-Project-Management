@@ -18,10 +18,10 @@ export default function ProjectSideBar({
             "w-full text-left px-1 py-2 rounded-sm my-1  hover:bg-stone-800 hover:text-stone-50 transition-colors duration-200";
 
           if (project.id === selectedProjectId) {
-            cssClasses += " bg-stone-800 text-stone-200";
+            cssClasses += " bg-stone-800 text-stone-200 active:bg-stone-100";
           }
           {
-            cssClasses += " text-stone-400";
+            cssClasses += " text-stone-400 ";
           }
           return (
             <li key={project.id}>
